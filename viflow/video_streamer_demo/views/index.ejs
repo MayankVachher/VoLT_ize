@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ViFlow</title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<h1>ViFlow</h1>
+	<p>... and god said, let the video flow.</p>
+	<video id="self-stream" playsinline autoplay></video>
+
+	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+	<script src="/javascripts/main.js" async></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.slim.js"></script>
+	<script>
+		var socket = io();
+	</script>
+</body>
+</html>
